@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  background: #081b29;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-card {
+  width: 90%;
+  max-width: 450px;
+  padding: 40px 35px;
+  margin: 20px auto;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #0a2a3a, #091e29);
+  box-shadow: 8px 8px 15px #021017, -8px -8px 15px #0c364b;
+  color: #0ef;
+  text-align: center;
+}
+
+.weather-card .search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.weather-card .search input {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  padding: 10px 20px;
+  outline: none;
+  background: #0c364b;
+  border: 2px solid #0ef;
+  border-radius: 30px;
+  color: #0ef;
+}
+
+.weather-card .search button {
+  width: 50px;
+  height: 50px;
+  margin-left: 16px;
+  border: none;
+  outline: 0;
+  background: #0ef;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 10px rgba(0, 238, 255, 0.3);
+  cursor: pointer;
+}
+
+.weather-card .search button i {
+  font-size: 24px;
+  color: #081b29;
+}
+
+.weather h1 {
+  font-size: 70px;
+  font-weight: 600;
+  margin-top: -20px;
+  color: #0ef;
+  text-shadow: 2px 2px 4px rgba(0, 238, 255, 0.5);
+}
+
+.weather h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: -15px;
+  color: #fff;
+}
+
+.weather .weather-icon {
+  width: 70%;
+  height: 200px;
+  margin: 20px auto;
+  background: rgba(0, 238, 255, 0.1);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.details {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details img {
+  width: 50px; 
+  height: 50px; 
+  object-fit: cover; 
+  filter: brightness(0.8);
+}
+
+
+.details .info {
+  margin-left: 10px;
+  color: #0ef;
+}
+
+.details .humidity,
+.wind {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+  color: #0ef;
+  text-shadow: 1px 1px 2px rgba(0, 238, 255, 0.5);
+}
